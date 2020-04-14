@@ -1,3 +1,6 @@
 # Extract IPs from Dionaea
 
-Extract IPs and group by protocol scanned. 
+Extract IPs from Dionaea bistream logs and group them by protocol. 
+
+### Usage
+
