@@ -2,7 +2,7 @@
 
 #function to extract and print URLs found in strings output of binaries
 print_urls () {
-        for i in $1
+        for i in $@
                 do
                         echo "FILE: $i"
                         sudo strings $i | grep -Eo "https?:\/\/\S+" 
@@ -16,5 +16,5 @@ then
         print_urls "*"
                 
 else
-        print_urls ""$@""
+        print_urls $@
 fi 
