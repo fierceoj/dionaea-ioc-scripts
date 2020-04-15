@@ -8,7 +8,7 @@ Make the script executable: <br/>
 ```chmod +x extractURLs.sh``` <br/>
 
 Run the script against all binaries: <br/>
-```./extractURLs.sh all```
+```./extractURLs.sh --all```
 
 Run the script against a specific binary: <br/>
 ```./extractURLs.sh <binary_name>```<br/>
