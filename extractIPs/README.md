@@ -7,7 +7,7 @@ Extract IPs from dionaea bistream logs and group them by protocol. The output in
 Place the script in the bistreams directory of the dionaea honeypot.
 
 Make the script executable: <br/>
-```chmod +x extractIPs.sh```
+```sudo chmod +x extractIPs.sh```
 
 Change directory to the bistream logs you want to check. <br/>
 Ex: <br/>
