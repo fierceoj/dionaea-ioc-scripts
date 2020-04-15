@@ -2,7 +2,7 @@
 Extract malicious URLs from dionaea binaries.
 
 ### Usage
-Place script in the binaries directory of the dionaea honeypot.
+The usage below assumes the script is in the binaries directory of the dionaea honeypot.
 
 Make the script executable: <br/>
 ```sudo chmod +x extractURLs.sh``` <br/>
@@ -10,8 +10,8 @@ Make the script executable: <br/>
 Run the script against all binaries: <br/>
 ```./extractURLs.sh --all```
 
-Run the script against a specific binary: <br/>
-```./extractURLs.sh <binary_name>```<br/>
+Run the script against specific binaries: <br/>
+```./extractURLs.sh <binary_name1>` <binary_name2> <binary_name3>...``<br/>
 
-- `<binary_name>` = the filename of the binary you want to check
+- `<binary_nameN>` = the filename of the binary you want to check
 
