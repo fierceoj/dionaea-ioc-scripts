@@ -1,6 +1,6 @@
 # Extract IPs from Dionaea
 
-Extract IPs from dionaea bistream logs and group them by protocol. 
+Extract IPs from dionaea bistream logs and group them by protocol. The output includes only unique IPs for each protocol (no duplicates per protocol).
 
 ### Usage
 
