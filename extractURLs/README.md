@@ -13,5 +13,5 @@ Run the script against all binaries: <br/>
 Run the script against a specific binary: <br/>
 ```./extractURLs.sh <binary_name>```<br/>
 
-`<binary_name>` = the filename of the binary you want to check
+- `<binary_name>` = the filename of the binary you want to check
 
