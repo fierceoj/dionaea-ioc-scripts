@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#function to extract and print URLs found in strings output of binaries
 print_urls () {
         for i in $1
                 do
@@ -9,6 +10,7 @@ print_urls () {
                 done
 }
 
+#either check all binares or just binary names provided
 if [ $1 == "--all" ] 
 then 
         print_urls "*"
