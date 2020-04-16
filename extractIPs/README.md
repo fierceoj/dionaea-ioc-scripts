@@ -19,5 +19,8 @@ To run the script for specific services:<br/>
 
 To set up daily collection at 11:59 PM:<br/>
 ```crontab -e```<br/>
-```59 23 * * * /home/ubuntu/extractIPs.sh &```<br/>
+```59 23 * * * <your_personal_path_to_file>/extractIPs.sh &```<br/>
 ```sudo service cron restart```
+
+
+The script saves the results file in the user's home directory.
