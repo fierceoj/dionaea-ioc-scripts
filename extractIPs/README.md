@@ -22,5 +22,6 @@ To set up daily collection at 11:59 PM:<br/>
 ```59 23 * * * <your_path_to_file>/extractIPs.sh &```<br/>
 ```sudo service cron restart```
 
+By default, the script saves the results file (YYYY-MM-DD_IPs.txt) in the user's home directory. 
 
-The script saves the results file (YYYY-MM-DD_IPs.txt) in the user's home directory.
+**Note:** To use the script with cron, you will likely need to change ~/$filename in the script to the absolute file path to your home directory or desired directory (e.g. /home/ubuntu/$filename).
