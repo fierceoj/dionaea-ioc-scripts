@@ -1,7 +1,13 @@
 #!/bin/bash
 
-#get name of current directory to use as filename
-filename=$(basename $(pwd))  
+#get today's date in YYYY-MM-DD format
+todays_date=$(date +%F)
+
+#change directory to today's bistream logs
+cd /opt/dionaea/var/dionaea/bistreams/$todays_date
+ 
+#create filename where results will go
+filename=$todays_date  
 filename+="_IPs.txt"
 
 #function to extract and print scanner IPs from bistream logs
