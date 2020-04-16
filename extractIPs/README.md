@@ -17,7 +17,7 @@ To run the script for specific services:<br/>
 
 - `<service_nameN>` = the particular service name you want to check
 
-To collect the logs daily at 11:59 PM:
+To set up daily collection at 11:59 PM:<br/>
 ```crontab -e```<br/>
 ```59 23 * * * /home/ubuntu/extractIPs.sh &```<br/>
 ```sudo service cron restart```
