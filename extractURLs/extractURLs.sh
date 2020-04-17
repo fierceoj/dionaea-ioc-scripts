@@ -4,7 +4,9 @@
 print_urls () {
         for i in $@
                 do
-                        echo "FILE: $i"
+                        echo "MD5 FILE HASH:"
+                        echo $i
+                        echo "URL IOCs:"
                         sudo strings $i | grep -Eo "https?:\/\/\S+" 
                         echo -e '\n'
                 done
@@ -13,11 +15,11 @@ print_urls () {
 #change directory to the binaries folder
 cd /opt/dionaea/var/dionaea/binaries
 
-#either check all binares or just binary names provided in arguments
+#either check all binares or just binary names provided
 if [ $1 == "--all" ] 
 then 
         print_urls "*"
                 
 else
         print_urls $@
-fi 
+fi  
