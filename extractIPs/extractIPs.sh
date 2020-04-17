@@ -24,7 +24,7 @@ print_IPs () {
                 done
 }
 
-#either check all protocol/services that were logged or check only specific protocols           
+#either check all protocol/services that were logged or check only specific protocols provided in arguments           
 if [ $1 == "--all" ] 
 then 
         services=$(ls | grep -oE "[a-zA-Z]{4,15}\-" | sort -u)
