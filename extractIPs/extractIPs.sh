@@ -14,17 +14,17 @@ filename+="_IPs.txt"
 print_IPs () {
         for i in $@ 
                 do
-                        echo "SERVICE:" | tee -a ~/$filename
-                        echo $i | tee -a ~/$filename
-                        echo "PORT:" | tee -a ~/$filename
-                        ls | grep $i | grep -oE "\-[0-9]{2,6}\-" | sort -u | tr -d - | tee -a ~/$filename
-                        echo "SCANNER IPs:" | tee -a ~/$filename
-                        ls | grep $i | grep -oE "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | sort -u | tee -a ~/$filename
-                        echo -e '\n' | tee -a ~/$filename
+                        echo "SERVICE:" | tee -a /home/ubuntu/$filename
+                        echo $i | tee -a /home/ubuntu/$filename
+                        echo "PORT:" | tee -a /home/ubuntu/$filename
+                        ls | grep $i | grep -oE "\-[0-9]{2,5}\-" | sort -u | tr -d - | tee -a /home/ubuntu/$filename
+                        echo "SCANNER IPs:" | tee -a /home/ubuntu/$filename
+                        ls | grep $i | grep -oE "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | sort -u | tee -a /home/ubuntu/$filename
+                        echo -e '\n' | tee -a /home/ubuntu/$filename
                 done
 }
 
-#either check all protocol/services that were logged or check only specific protocols provided in arguments           
+#either check all protocol/services that were logged or check only specific protocols           
 if [ $1 == "--all" ] 
 then 
         services=$(ls | grep -oE "[a-zA-Z]{4,15}\-" | sort -u)
