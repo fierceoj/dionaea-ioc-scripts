@@ -17,7 +17,7 @@ print_IPs () {
                         echo "SERVICE:" | tee -a ~/$filename
                         echo $i | tee -a ~/$filename
                         echo "PORT:" | tee -a ~/$filename
-                        ls | grep $i | grep -oE "\-[0-9]{2,4}\-" | sort -u | tr -d - | tee -a ~/$filename
+                        ls | grep $i | grep -oE "\-[0-9]{2,6}\-" | sort -u | tr -d - | tee -a ~/$filename
                         echo "SCANNER IPs:" | tee -a ~/$filename
                         ls | grep $i | grep -oE "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | sort -u | tee -a ~/$filename
                         echo -e '\n' | tee -a ~/$filename
