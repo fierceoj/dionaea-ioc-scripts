@@ -18,8 +18,7 @@ To run the script for specific services:<br/>
 - `<service_nameN>` = the particular service name you want to check
 
 To set up daily collection at 11:59 PM:<br/>
-```crontab -e```<br/>
-```59 23 * * * <your_path_to_file>/extractIPs.sh --all  > /dev/null 2>&1```<br/>
-```sudo service cron restart```
+```sudo nano /etc/crontab```<br/>
+```59 23   * * *   ubuntu  <your_path_to_file>/extractIPs.sh --all  > /dev/null 2>&1```<br/>
 
 By default, the script saves the results file (YYYY-MM-DD_IPs.txt) in the ubuntu user's home directory. 
