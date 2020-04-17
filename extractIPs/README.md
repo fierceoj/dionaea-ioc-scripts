@@ -13,7 +13,7 @@ To run the script for all services:<br/>
 - `--all ` = check all protocols/services that were logged <br/>
 
 To run the script for specific services:<br/>
-```../extractIPs.sh <service_name1> <service_name2> <service_name3>...<service_nameN>```<br/>
+```./extractIPs.sh <service_name1> <service_name2> <service_name3>...<service_nameN>```<br/>
 
 - `<service_nameN>` = the particular service name you want to check
 
