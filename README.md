@@ -2,4 +2,4 @@
 Extract IOCs from dionaea honeypot bistreams and binaries.
 
 # Requirements
-- dionaea honeypot on a Linux system
+- dionaea honeypot on a Linux Ubuntu system
