@@ -14,11 +14,11 @@ filename+="_IPs.txt"
 print_IPs () {
         for i in $@ 
                 do
-                        echo "Service:" | tee -a ~/$filename
+                        echo "SERVICE:" | tee -a ~/$filename
                         echo $i | tee -a ~/$filename
-                        echo "Port:" | tee -a ~/$filename
+                        echo "PORT:" | tee -a ~/$filename
                         ls | grep $i | grep -oE "\-[0-9]{2,4}\-" | sort -u | tr -d - | tee -a ~/$filename
-                        echo "Scanner IPs:" | tee -a ~/$filename
+                        echo "SCANNER IPs:" | tee -a ~/$filename
                         ls | grep $i | grep -oE "([0-9]{1,3}[\.]){3}[0-9]{1,3}" | sort -u | tee -a ~/$filename
                         echo -e '\n' | tee -a ~/$filename
                 done
