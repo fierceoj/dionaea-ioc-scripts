@@ -15,7 +15,7 @@ print_urls () {
 #change directory to the binaries folder
 cd /opt/dionaea/var/dionaea/binaries
 
-#either check all binares or just binary names provided in arguments
+#either check all binaries or just binary names provided in arguments
 if [ $1 == "--all" ] 
 then 
         print_urls "*"
